@@ -6,6 +6,11 @@ pipeline {
         }
     }
     stages {
+        stage('Check Node.js Version') {
+            steps {
+                sh 'node --version'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
@@ -20,7 +25,7 @@ pipeline {
     }
     post {
         success {
-            echo 'congratulate'
+            echo 'Congratulations! The build was successful.'
         }
     }
 }
