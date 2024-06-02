@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:14.17.1-buster'
+            image 'node:20.9.0-buster'
             args '-v $HOME/.npm:/root/.npm'
         }
     }
