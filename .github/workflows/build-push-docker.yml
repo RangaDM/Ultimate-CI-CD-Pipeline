@@ -3,7 +3,7 @@ name: Build, Push Docker Image and Update Manifests
 on:
   push:
     branches:
-      - xx
+      - release
 
 jobs:
   build-push-update:
